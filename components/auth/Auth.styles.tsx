@@ -41,7 +41,6 @@ export const AuthContainer = styled.div`
   @media (max-width: 768px) {
     padding: 0;
     height: 100vh;
-    border: 1px solid red;
   }
   @media (min-width: 768px) {
     height: 100%;
