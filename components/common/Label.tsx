@@ -4,6 +4,10 @@ export const Label = styled.label`
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
 export const LabelPassword = styled.div`
   position: relative;
@@ -31,10 +35,14 @@ export const LabelSpan = styled.span`
   }
 `;
 export const LabelSpanSign = styled(LabelSpan)`
-  top: 67%;
+  top: 70%;
   @media (max-width: 768px) {
     display: inline-block;
     top: 70%;
+  }
+  @media (min-width: 768px) {
+    display: inline-block;
+    top: 67%;
   }
 `;
 export const LabelSpan1 = styled(LabelSpan)`

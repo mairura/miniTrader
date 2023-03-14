@@ -7,7 +7,7 @@ export const Button = styled.button`
   align-items: center;
   padding: 24px 60px;
   gap: 10px;
-  width: 30vw;
+  width: 25vw;
   height: 5vh;
   background: #7933ff;
   border-radius: 12px;

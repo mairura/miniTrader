@@ -56,9 +56,14 @@ export const AuthTitle = styled.div`
     font-size: 22px;
   }
 `;
+export const Italics = styled.i`
+  font-size: 12px;
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+`;
 export const AuthButton = styled(Button)`
-  width: 100%;
-  height: 6vh;
+  height: 5vh;
   margin: 20px 0px;
   color: #fff;
   @media (max-width: 768px) {

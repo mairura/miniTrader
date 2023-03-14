@@ -13,6 +13,7 @@ import {
   AuthTitle,
   CheckData,
   CheckInput,
+  Italics,
   LoginReset,
   SignUp,
 } from "./Auth.styles";
@@ -151,7 +152,9 @@ export default function SignupForm() {
           onChange={handleSetRegisterParams}
           required
         />
-        {isValidPhoneNumber ? null : <i>Please enter a valid phone number</i>}
+        {isValidPhoneNumber ? null : (
+          <Italics>Please enter a valid phone number</Italics>
+        )}
         <LabelPassword>
           <Label htmlFor="password">Password</Label>
           <Input
@@ -161,18 +164,18 @@ export default function SignupForm() {
             onChange={handleSetRegisterParams}
             required
           />
-          <LabelSpan onClick={handleShowPasswordChange}>
+          {/* <LabelSpan onClick={handleShowPasswordChange}>
             {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
-          </LabelSpan>
+          </LabelSpan> */}
           <Label htmlFor="confirmPassword">Confirm Password</Label>
           <Input
             type={showPassword ? "text" : "password"}
             id="confirmPassword"
             required
           />
-          <LabelSpanSign onClick={handleShowPasswordChange}>
+          {/* <LabelSpanSign onClick={handleShowPasswordChange}>
             {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
-          </LabelSpanSign>
+          </LabelSpanSign> */}
         </LabelPassword>
 
         <AuthButton type="submit" onClick={(e) => handleSignUp(e)}>
