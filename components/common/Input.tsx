@@ -20,6 +20,6 @@ export const Input = styled.input`
   }
   @media (min-width: 768px) {
     width: 100%;
-    margin: 1% 0;
+    margin: 5% 0;
   }
 `;

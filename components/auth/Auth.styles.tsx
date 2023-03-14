@@ -148,6 +148,9 @@ export const ForgotPass = styled.p`
     color: #7933ff;
     font-size: 14px;
   }
+  @media (min-width: 768px) {
+    padding: 5px;
+  }
 `;
 //-------------Reset Password Page----------
 export const PassContainer = styled(AuthContainer)`

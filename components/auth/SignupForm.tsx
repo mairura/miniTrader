@@ -164,18 +164,18 @@ export default function SignupForm() {
             onChange={handleSetRegisterParams}
             required
           />
-          {/* <LabelSpan onClick={handleShowPasswordChange}>
+          <LabelSpan onClick={handleShowPasswordChange}>
             {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
-          </LabelSpan> */}
+          </LabelSpan>
           <Label htmlFor="confirmPassword">Confirm Password</Label>
           <Input
             type={showPassword ? "text" : "password"}
             id="confirmPassword"
             required
           />
-          {/* <LabelSpanSign onClick={handleShowPasswordChange}>
+          <LabelSpanSign onClick={handleShowPasswordChange}>
             {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
-          </LabelSpanSign> */}
+          </LabelSpanSign>
         </LabelPassword>
 
         <AuthButton type="submit" onClick={(e) => handleSignUp(e)}>

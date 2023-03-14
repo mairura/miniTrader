@@ -12,7 +12,6 @@ export const Label = styled.label`
     flex-wrap: wrap;
   }
   @media (min-width: 768px) {
-    font-size: 13px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -30,11 +29,14 @@ export const LabelPassword = styled.div`
   }
   @media (min-width: 768px) {
     width: 100%;
-    margin: 1% 0;
+    margin: 4% 0;
   }
 `;
 export const LabelPasswordLogin = styled(LabelPassword)`
   height: 15vh;
+  @media (min-width: 768px) {
+    height: 10vh;
+  }
 `;
 export const LabelSpan = styled.span`
   position: absolute;
@@ -69,6 +71,9 @@ export const LabelSpanLogin = styled(LabelSpan)`
   top: 43%;
   @media (max-width: 786px) {
     top: 45%;
+  }
+  @media (min-width: 786px) {
+    top: 57%;
   }
 `;
 export const LabelSpanConfirm = styled(LabelSpan)`
