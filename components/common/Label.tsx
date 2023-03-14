@@ -4,7 +4,16 @@ export const Label = styled.label`
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  @media (max-width: 600px) {
+    padding: 0;
+  }
   @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 768px) {
+    font-size: 13px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -18,6 +27,10 @@ export const LabelPassword = styled.div`
   margin-top: 5%;
   @media (max-width: 768px) {
     width: 100%;
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+    margin: 1% 0;
   }
 `;
 export const LabelPasswordLogin = styled(LabelPassword)`

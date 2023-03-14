@@ -10,8 +10,16 @@ export const Input = styled.input`
   background: transparent;
   border: 1px solid #dedede;
   border-radius: 6px;
+  @media (max-width: 600px) {
+    padding: 0;
+    margin: 2% 0;
+  }
   @media (max-width: 768px) {
     width: 100%;
     height: 5vh;
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+    margin: 1% 0;
   }
 `;

@@ -34,9 +34,17 @@ export const AuthContainer = styled.div`
   background-position: center;
   border-radius: 12px;
   height: 90vh;
+  @media (max-width: 400px) {
+    padding: 0;
+    height: 100vh;
+  }
   @media (max-width: 768px) {
     padding: 0;
     height: 100vh;
+    border: 1px solid red;
+  }
+  @media (min-width: 768px) {
+    height: 100%;
   }
 `;
 export const AuthBody = styled.div`
@@ -52,8 +60,17 @@ export const AuthTitle = styled.div`
   padding-top: 5%;
   display: flex;
   align-items: center;
+  @media (max-width: 400px) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+  }
   @media (max-width: 768px) {
     font-size: 22px;
+  }
+  @media (min-width: 768px) {
+    padding: 0;
+    font-size: 20px;
   }
 `;
 export const Italics = styled.i`
@@ -66,6 +83,9 @@ export const AuthButton = styled(Button)`
   height: 5vh;
   margin: 20px 0px;
   color: #fff;
+  @media (max-width: 400px) {
+    padding: 0;
+  }
   @media (max-width: 768px) {
     width: 100%;
     height: 50px;
@@ -116,6 +136,9 @@ export const LoginReset = styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: row;
+  @media (min-width: 768px) {
+    padding: 1%;
+  }
 `;
 export const ForgotPass = styled.p`
   transition: all 2s ease-out;

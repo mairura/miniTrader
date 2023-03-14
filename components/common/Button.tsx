@@ -22,4 +22,11 @@ export const Button = styled.button`
     padding: 10px 20px;
     font-size: 16px;
   }
+  @media (min-width: 768px) {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 5vh;
+    font-size: 13px;
+  }
 `;
