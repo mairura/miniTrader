@@ -54,14 +54,14 @@ export const LabelSpanLogin = styled(LabelSpan)`
   @media (max-width: 320px) {
     top: 40px;
   }
-  @media (min-width: 320px) and (max-width: 600px) {
-    top: 42px;
+  @media (min-width: 321px) and (max-width: 380px) {
+    top: 34px;
   }
-  @media (min-width: 601px) and (max-width: 969px) {
-    top: 50px;
+  @media (min-width: 381px) and (max-width: 450px) {
+    top: 41px;
   }
-  @media (min-width: 970px) {
-    top: 53px;
+  @media (min-width: 451px) and (max-width: 550px) {
+    top: 37px;
   }
 `;
 export const LabelSpanConfirm = styled(LabelSpan)`
