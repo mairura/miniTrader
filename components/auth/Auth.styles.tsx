@@ -96,8 +96,7 @@ export const LoginContainer = styled(AuthContainer)`
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  height: 60vh;
-  margin-top: 35%;
+  height: 50vh;
   @media (max-width: 768px) {
     height: 70vh;
     width: 90vw;
@@ -147,8 +146,7 @@ export const PassContainer = styled(AuthContainer)`
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  height: 45vh;
-  margin-top: 45%;
+  height: 40vh;
   @media (max-width: 768px) {
     width: 90vw;
     height: 60vh;
@@ -178,7 +176,6 @@ export const InfoContainer = styled(AuthContainer)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50%;
   height: 30vh;
   @media (max-width: 768px) {
     width: 90vw;
@@ -211,7 +208,6 @@ export const SuccessContainer = styled(InfoContainer)`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50%;
   height: 30vh;
   @media (max-width: 768px) {
     width: 90vw;

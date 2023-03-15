@@ -57,14 +57,11 @@ export const LabelSpanLogin = styled(LabelSpan)`
   }
 `;
 export const LabelSpanConfirm = styled(LabelSpan)`
-  top: 28%;
-  @media (max-width: 786px) {
-    top: 32%;
-  }
-`;
-export const LabelSpanConfirm1 = styled(LabelSpan)`
-  top: 59%;
-  @media (max-width: 786px) {
-    top: 68%;
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  cursor: pointer;
+  @media (max-width: 600px) {
+    top: 25px;
   }
 `;

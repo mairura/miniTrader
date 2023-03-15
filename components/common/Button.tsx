@@ -30,3 +30,6 @@ export const Button = styled.button`
     font-size: 13px;
   }
 `;
+export const ButtonGo = styled(Button)`
+  width: 10vw;
+`;
