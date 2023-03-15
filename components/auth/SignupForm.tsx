@@ -50,6 +50,10 @@ const USER_SIGN_UP_QUERY = gql`
 `;
 
 export default function SignupForm() {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [phoneNumberError, setPhoneNumberError] = useState("");
   const [registerParams, setRegisterParams] = useState<{
     username: string;
     email: string;

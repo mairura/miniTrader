@@ -94,6 +94,7 @@ export const LoginContainer = styled(AuthContainer)`
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 70vh;
   }
 `;
 export const LabelTitle = styled.p`
