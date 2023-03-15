@@ -34,7 +34,7 @@ export const LabelSpan = styled.span`
   right: 10px;
   cursor: pointer;
   @media (max-width: 600px) {
-    top: 15px;
+    top: 26px;
   }
   @media (min-width: 768px) {
     top: 40px;
@@ -48,12 +48,12 @@ export const LabelSpan1 = styled(LabelSpan)`
   }
 `;
 export const LabelSpanLogin = styled(LabelSpan)`
-  top: 43%;
-  @media (max-width: 786px) {
-    top: 45%;
+  position: absolute;
+  @media (max-width: 600px) {
+    top: 40px;
   }
-  @media (min-width: 786px) {
-    top: 57%;
+  @media (min-width: 768px) {
+    top: 50%;
   }
 `;
 export const LabelSpanConfirm = styled(LabelSpan)`

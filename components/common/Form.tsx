@@ -12,10 +12,11 @@ export const Form = styled.form`
   @media (max-width: 768px) {
     height: 90vh;
     padding: 30px;
-    width: 100vw;
+    width: 100%;
   }
   @media (min-width: 768px) {
     height: 100%;
+    width: 100%;
     padding: 0;
   }
 `;
