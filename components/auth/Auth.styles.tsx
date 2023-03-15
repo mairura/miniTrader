@@ -4,12 +4,13 @@ import { Button } from "../common/Button";
 export const AuthWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3%;
   background: #19123b;
+  border: 1px solid red;
   @media (max-width: 600px) {
     padding: 0;
     width: 100%;
@@ -33,18 +34,18 @@ export const AuthContainer = styled.div`
   background-size: cover;
   background-position: center;
   border-radius: 12px;
-  height: 90vh;
-  @media (max-width: 400px) {
-    padding: 0;
-    height: 100vh;
-  }
-  @media (max-width: 768px) {
-    padding: 0;
-    height: 100vh;
-  }
-  @media (min-width: 768px) {
-    height: 100%;
-  }
+  min-height: 100vh;
+  // @media (max-width: 400px) {
+  //   padding: 0;
+  //   height: 100vh;
+  // }
+  // @media (max-width: 768px) {
+  //   padding: 0;
+  //   height: 100vh;
+  // }
+  // @media (min-width: 768px) {
+  //   height: 100%;
+  // }
 `;
 export const AuthBody = styled.div`
   width: 534px;

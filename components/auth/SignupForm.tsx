@@ -1,12 +1,7 @@
 import { useRouter } from "next/router";
 import { Form } from "../common/Form";
 import { Input } from "../common/Input";
-import {
-  Label,
-  LabelPassword,
-  LabelSpan,
-  LabelSpanSign,
-} from "../common/Label";
+import { Label, LabelPassword, LabelSpan } from "../common/Label";
 import {
   AuthButton,
   AuthContainer,
@@ -155,8 +150,8 @@ export default function SignupForm() {
         {isValidPhoneNumber ? null : (
           <Italics>Please enter a valid phone number</Italics>
         )}
+        <Label htmlFor="password">Password</Label>
         <LabelPassword>
-          <Label htmlFor="password">Password</Label>
           <Input
             type={showPassword ? "text" : "password"}
             value={registerParams.password}
@@ -167,17 +162,18 @@ export default function SignupForm() {
           <LabelSpan onClick={handleShowPasswordChange}>
             {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
           </LabelSpan>
-          <Label htmlFor="confirmPassword">Confirm Password</Label>
+        </LabelPassword>
+        <Label htmlFor="confirmPassword">Confirm Password</Label>
+        <LabelPassword>
           <Input
             type={showPassword ? "text" : "password"}
             id="confirmPassword"
             required
           />
-          <LabelSpanSign onClick={handleShowPasswordChange}>
+          <LabelSpan onClick={handleShowPasswordChange}>
             {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
-          </LabelSpanSign>
+          </LabelSpan>
         </LabelPassword>
-
         <AuthButton type="submit" onClick={(e) => handleSignUp(e)}>
           Signup
         </AuthButton>
