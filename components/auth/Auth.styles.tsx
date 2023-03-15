@@ -23,6 +23,9 @@ export const AuthContainer = styled.div`
   background-position: center;
   border-radius: 12px;
   height: 100%;
+  @media (max-width: 320px) {
+    max-height: 70%;
+  }
 `;
 export const AuthBody = styled.div`
   margin: 3%;
@@ -41,14 +44,17 @@ export const AuthTitle = styled.div`
   padding-top: 5%;
   display: flex;
   align-items: center;
-  @media (max-width: 400px) {
-    font-size: 20px;
-    line-height: 20px;
+  @media (max-width: 320px) {
+    font-size: 17px;
     padding: 0;
   }
-  @media (max-width: 768px) {
-    font-size: 22px;
+  @media (min-width: 321px) and (max-width: 600px) {
+    font-size: 20px;
+    padding: 0;
   }
+  // @media (max-width: 768px) {
+  //   font-size: 22px;
+  // }
   @media (min-width: 768px) {
     padding: 0;
     font-size: 20px;

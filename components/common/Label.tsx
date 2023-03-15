@@ -4,12 +4,11 @@ export const Label = styled.label`
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  @media (max-width: 600px) {
-    padding: 0;
+  @media (max-width: 320px) {
+    font-size: 12px;
   }
-  @media (max-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: 320px) and (max-width: 600px) {
+    font-size: 15px;
   }
   @media (min-width: 768px) {
     width: 100%;
@@ -33,8 +32,11 @@ export const LabelSpan = styled.span`
   top: 30px;
   right: 10px;
   cursor: pointer;
-  @media (max-width: 600px) {
-    top: 12px;
+  @media (max-width: 320px) {
+    top: 17px;
+  }
+  @media (min-width: 321px) and (max-width: 600px) {
+    top: 21px;
   }
   @media (min-width: 768px) {
     top: 38px;
@@ -49,11 +51,17 @@ export const LabelSpan1 = styled(LabelSpan)`
 `;
 export const LabelSpanLogin = styled(LabelSpan)`
   position: absolute;
-  @media (max-width: 600px) {
-    top: 33px;
+  @media (max-width: 320px) {
+    top: 40px;
   }
-  @media (min-width: 601px) {
-    top: 54px;
+  @media (min-width: 320px) and (max-width: 600px) {
+    top: 42px;
+  }
+  @media (min-width: 601px) and (max-width: 969px) {
+    top: 50px;
+  }
+  @media (min-width: 970px) {
+    top: 53px;
   }
 `;
 export const LabelSpanConfirm = styled(LabelSpan)`
