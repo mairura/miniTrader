@@ -7,7 +7,8 @@ const Info = () => {
     <InfoContainer>
       <AuthTitle>Instructions sent</AuthTitle>
       <InfoTitle>
-        Please follow the instructions sent to your email to activate your account
+        Please follow the instructions sent to your email to activate your
+        account
       </InfoTitle>
       <LeftChevron />
     </InfoContainer>

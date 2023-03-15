@@ -8,18 +8,7 @@ export const AuthWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3%;
   background: #19123b;
-  @media (max-width: 600px) {
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-  }
-  @media (max-width: 768px) {
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-  }
 `;
 export const AuthContainer = styled.div`
   position: relative;
@@ -36,10 +25,13 @@ export const AuthContainer = styled.div`
   height: 100%;
 `;
 export const AuthBody = styled.div`
-  width: 534px;
+  width: 80vw;
   height: 100%;
   display: flex;
   justify-content: center;
+  @media (max-width: 768px) {
+    height: 70%;
+  }
 `;
 export const AuthTitle = styled.div`
   font-weight: 700;
@@ -96,11 +88,11 @@ export const LoginContainer = styled(AuthContainer)`
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  height: 50vh;
+  height: 50%;
   @media (max-width: 768px) {
-    height: 70vh;
-    width: 90vw;
-    padding: 60px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 export const LabelTitle = styled.p`
@@ -179,7 +171,6 @@ export const InfoContainer = styled(AuthContainer)`
   height: 30vh;
   @media (max-width: 768px) {
     width: 90vw;
-    margin-top: 60%;
   }
 `;
 export const InfoTitle = styled(LabelTitle)`
