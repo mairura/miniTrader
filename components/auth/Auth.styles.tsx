@@ -17,7 +17,7 @@ export const AuthContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: url(/Form.svg);
-  padding: 7% 12%;
+  padding: 2% 5%;
   color: #fff;
   background-size: cover;
   background-position: center;
@@ -25,6 +25,7 @@ export const AuthContainer = styled.div`
   height: 100%;
 `;
 export const AuthBody = styled.div`
+  margin: 3%;
   width: 80vw;
   height: 100%;
   display: flex;
@@ -188,7 +189,6 @@ export const ResetYouPass = styled(AuthContainer)`
   background-size: cover;
   background-position: center;
   height: 60vh;
-  margin: 30% 2%;
 `;
 export const ResetTitle = styled(AuthTitle)`
   margin-top: 80px;
