@@ -13,10 +13,12 @@ export const Input = styled.input`
   @media (max-width: 600px) {
     padding: 0;
     margin: 2% 0;
+    font-size: 1rem;
   }
   @media (max-width: 768px) {
     width: 100%;
     height: 5vh;
+    font-size: 1rem;
   }
   @media (min-width: 768px) {
     width: 100%;
