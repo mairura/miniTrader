@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { Form } from "../common/Form";
 import { Input } from "../common/Input";
-import { Label, LabelPasswordLogin, LabelSpanLogin } from "../common/Label";
+import { Label, LabelPassword, LabelSpan } from "../common/Label";
 import { useState, CSSProperties } from "react";
 import {
   AuthButton,
@@ -79,9 +79,9 @@ export default function LoginForm() {
         }}
       >
         <HashLoader
-          color="blue"
+          color="#7933ff"
           cssOverride={override}
-          size={150}
+          size={100}
           aria-label="Loading Spinner"
           data-testid="loader"
         />
@@ -104,8 +104,8 @@ export default function LoginForm() {
           }}
           required
         />
-        <LabelPasswordLogin>
-          <Label htmlFor="password">Password</Label>
+        <Label htmlFor="password">Password</Label>
+        <LabelPassword>
           <Input
             type={showPassword ? "text" : "password"}
             onChange={(e) => {
@@ -113,10 +113,10 @@ export default function LoginForm() {
             }}
             required
           />
-          <LabelSpanLogin onClick={handleShowPasswordChange}>
+          <LabelSpan onClick={handleShowPasswordChange}>
             {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
-          </LabelSpanLogin>
-        </LabelPasswordLogin>
+          </LabelSpan>
+        </LabelPassword>
 
         <AuthButton type="submit" onClick={(e) => getData(e)}>
           Login

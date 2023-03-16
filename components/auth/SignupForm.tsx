@@ -113,9 +113,9 @@ export default function SignupForm() {
         }}
       >
         <HashLoader
-          color="blue"
+          color="#7933ff"
           cssOverride={override}
-          size={150}
+          size={100}
           aria-label="Loading Spinner"
           data-testid="loader"
         />

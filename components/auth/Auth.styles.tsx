@@ -45,19 +45,20 @@ export const AuthTitle = styled.div`
   display: flex;
   align-items: center;
   @media (max-width: 320px) {
-    font-size: 17px;
+    font-size: 14px;
     padding: 0;
   }
   @media (min-width: 321px) and (max-width: 600px) {
     font-size: 20px;
     padding: 0;
   }
-  // @media (max-width: 768px) {
-  //   font-size: 22px;
-  // }
-  @media (min-width: 768px) {
+  @media (min-width: 601px) and (max-width: 900px) {
     padding: 0;
-    font-size: 20px;
+    font-size: 17px;
+  }
+  @media (min-width: 901px) {
+    font-size: 25px;
+    padding: 0;
   }
 `;
 export const Italics = styled.i`
@@ -177,37 +178,29 @@ export const InfoContainer = styled(AuthContainer)`
   justify-content: center;
   align-items: center;
   height: 30vh;
-  @media (max-width: 768px) {
-    width: 90vw;
-  }
+  width: 25vw;
 `;
 export const InfoTitle = styled(LabelTitle)`
-  padding: 1px;
   margin: 0;
   padding: 5px 50px;
-  align-items: center;
-  display: flex;
   text-align: center;
   margin-bottom: 50px;
+  width: 25vw;
 `;
 ///-------------Reset Your Password Page------
 export const ResetYouPass = styled(AuthContainer)`
   background-image: url(/bgproRYP.svg);
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 50vh;
 `;
 export const ResetTitle = styled(AuthTitle)`
   margin-top: 80px;
 `;
 ///------------------Success Page------------
-export const SuccessContainer = styled(InfoContainer)`
+export const SuccessContainer = styled(AuthContainer)`
   background-image: url(/bgpro5.svg);
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 30vh;
-  @media (max-width: 768px) {
-    width: 90vw;
-  }
 `;
