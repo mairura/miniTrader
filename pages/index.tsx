@@ -19,7 +19,7 @@ export default function HomePage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
+    setTimeout(() => setLoading(false), 3000);
   }, []);
 
   return (
@@ -38,7 +38,7 @@ export default function HomePage() {
             <HashLoader
               color="#7933ff"
               cssOverride={override}
-              size={150}
+              size={100}
               aria-label="Loading Spinner"
               data-testid="loader"
             />
