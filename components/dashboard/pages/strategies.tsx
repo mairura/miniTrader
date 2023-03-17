@@ -55,12 +55,6 @@ const Strategies = () => {
       chevron: "/UpChevron.svg",
       percentage: "+1.8%",
     },
-    {
-      profile: "/Person2.svg",
-      name: "Belinda",
-      chevron: "/UpChevron.svg",
-      percentage: "+1.8%",
-    },
   ];
   return (
     <MainBg>
