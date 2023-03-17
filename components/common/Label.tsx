@@ -24,7 +24,9 @@ export const LabelSpan = styled.span`
   position: absolute;
   right: 10px;
   cursor: pointer;
-  top: 40%;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 `;
 export const LabelSpanLogin = styled(LabelSpan)`
   position: absolute;
