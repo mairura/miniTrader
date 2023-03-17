@@ -13,13 +13,14 @@ const override: CSSProperties = {
   display: "block",
   margin: "0 auto",
   borderColor: "gray",
+  backgroundColor: " #19123b",
 };
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 5000);
   }, []);
 
   return (
