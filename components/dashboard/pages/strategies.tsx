@@ -67,9 +67,9 @@ const Strategies = () => {
       <StrategiesContainer>
         <StrategiesHeader>Traders</StrategiesHeader>
         {/* Trader 1 */}
-        {tradersData.map((item: any) => {
+        {tradersData.map((item: any, index: any) => {
           return (
-            <StrategiesContent>
+            <StrategiesContent key={index}>
               <Image
                 src={item.profile}
                 height={30}
