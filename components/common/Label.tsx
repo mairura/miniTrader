@@ -25,15 +25,7 @@ export const LabelSpan = styled.span`
   right: 10px;
   cursor: pointer;
   top: 50%;
-  transform: translateY(-50%);
 `;
-// export const LabelPasswordLogin = styled(LabelPassword)`
-//   height: 15vh;
-//   @media (min-width: 768px) {
-//     height: 10vh;
-//   }
-// `;
-
 export const LabelSpanLogin = styled(LabelSpan)`
   position: absolute;
   right: 10px;

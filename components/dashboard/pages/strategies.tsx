@@ -11,6 +11,8 @@ import {
   ModalData,
   ModalHeader,
   ModalInput,
+  ModalPay,
+  ModalPaySpan,
   StrategiesBtn,
   StrategiesContainer,
   StrategiesContent,
@@ -20,6 +22,7 @@ import {
 } from "./dashboard.styles";
 // reactstrap components
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
+import { BiDollar } from "react-icons/bi";
 
 const Strategies = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -105,7 +108,12 @@ const Strategies = () => {
                   <ModalBody>
                     <ModalData>
                       <ModalBodyHeader>Enter Amount to Spend</ModalBodyHeader>
-                      <ModalInput type="text" placeholder="enter amount" />
+                      <ModalPay>
+                        <ModalInput type="text" />
+                        <ModalPaySpan>
+                          <BiDollar />{" "}
+                        </ModalPaySpan>
+                      </ModalPay>
                       <ModalButton>Confirm</ModalButton>
                       <ModalCancel onClick={() => setModalOpen(!modalOpen)}>
                         Cancel

@@ -83,9 +83,24 @@ export const ModalBodyHeader = styled(StrategiesHeader)`
   display: flex;
   text-align: center;
 `;
+export const ModalPay = styled.div`
+  position: relative;
+  display: inline-block;
+`;
+export const ModalPaySpan = styled.span`
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  top: 42%;
+  color: #fff;
+  background: #402771;
+  border-radius: 0.7em;
+  padding: 0.8em;
+  margin-left: 0.4em;
+`;
 export const ModalInput = styled.input`
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 3.5em;
   border: 1px solid #c4c4c4;
   border-radius: 0.7em;
   width: 20vw;
