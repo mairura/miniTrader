@@ -26,7 +26,29 @@ import toast, { Toaster } from "react-hot-toast";
 import { BiDollar } from "react-icons/bi";
 
 const Strategies = () => {
-  const notify = () => toast.success("Confirm Success");
+  const notify = () =>
+    toast("Confirm Success", {
+      duration: 4000,
+      position: "top-center",
+
+      // Styling
+      style: {},
+
+      // Custom Icon
+      icon: "👏",
+
+      // Change colors of success/error/loading icon
+      iconTheme: {
+        primary: "#000",
+        secondary: "#fff",
+      },
+
+      // Aria
+      ariaProps: {
+        role: "status",
+        "aria-live": "polite",
+      },
+    });
   const [modalOpen, setModalOpen] = useState(false);
   //Traders Data profiles
   const tradersData = [
