@@ -49,6 +49,7 @@ export const MiniImg = styled.div`
 
 export const KeymapItems = styled.div`
   display: flex;
+  font-family: "Montserrat", sans-serif;
   flex-direction: column;
   color: #fff;
   justify-items: center;

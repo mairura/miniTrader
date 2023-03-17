@@ -4,6 +4,7 @@ export const QDialElement = styled.div`
   width: 100%;
   height: 82vh;
   justify-content: end;
+  font-family: "Montserrat", sans-serif;
 `;
 
 export const QDialContainer = styled.div`

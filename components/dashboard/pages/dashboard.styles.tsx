@@ -2,6 +2,7 @@ import { Button } from "@/components/common/Button";
 import styled from "styled-components";
 
 export const MainBg = styled.div`
+  font-family: "Montserrat", sans-serif;
   background: #211436;
   height: 82vh;
   display: flex;

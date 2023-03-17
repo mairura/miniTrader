@@ -4,6 +4,7 @@ export const DashboardSection = styled.div`
   position: relative;
   width: 100%;
   background: rgba(46, 29, 80, 0.44);
+  font-family: "Montserrat", sans-serif;
 `;
 
 export const HambugerMenu = styled.div`
