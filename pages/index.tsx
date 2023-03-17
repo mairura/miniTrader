@@ -13,7 +13,6 @@ const override: CSSProperties = {
   display: "block",
   margin: "0 auto",
   borderColor: "gray",
-  backgroundColor: " #19123b",
 };
 
 export default function HomePage() {
@@ -34,6 +33,7 @@ export default function HomePage() {
               alignItems: "center",
               width: "100vw",
               height: "100vh",
+              backgroundColor: " #19123b",
             }}
           >
             <HashLoader
