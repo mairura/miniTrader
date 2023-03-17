@@ -93,7 +93,7 @@ export const ModalPaySpan = styled.span`
   left: 0;
   cursor: pointer;
   top: 42%;
-  transform: translateY(-42%);
+  transform: translateY(-50%);
   color: #fff;
   background: #402771;
   border-radius: 0.7em;
