@@ -22,23 +22,11 @@ import {
 } from "./dashboard.styles";
 // reactstrap components
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import toast, { Toaster } from "react-hot-toast";
 import { BiDollar } from "react-icons/bi";
 
 const Strategies = () => {
-  const notify = () =>
-    toast("Confirm Success", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-      type: "success",
-    });
+  const notify = () => toast.success("Confirm Success");
   const [modalOpen, setModalOpen] = useState(false);
   //Traders Data profiles
   const tradersData = [
@@ -129,18 +117,7 @@ const Strategies = () => {
                         </ModalPaySpan>
                       </ModalPay>
                       <ModalButton onClick={notify}>Confirm</ModalButton>
-                      <ToastContainer
-                        position="top-right"
-                        autoClose={5000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        theme="colored"
-                      />
+                      <Toaster />
                       <ModalCancel onClick={() => setModalOpen(!modalOpen)}>
                         Cancel
                       </ModalCancel>
