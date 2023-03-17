@@ -9,41 +9,19 @@ const Keymap = () => {
     <div>
       <KeymapItems>
         <KeyFrame onClick={() => router.push("/dashboard")}>
-          <Image
-            src="/Findericon.svg"
-            height={30}
-            width={30}
-            alt="fingerup icon"
-          />
+          <Image src="/Meter.svg" height={30} width={30} alt="fingerup icon" />
           &nbsp; &nbsp; Risk Selection
         </KeyFrame>
 
-        <KeyFrame onClick={() => router.push("/dashboard/savings")}>
+        <KeyFrame onClick={() => router.push("/dashboard/strategies")}>
           {" "}
           <Image
-            src="/GetCash.svg"
+            src="/Bishop.svg"
             height={30}
             width={30}
             alt="get cash icon"
           />{" "}
-          &nbsp; &nbsp;Savings
-        </KeyFrame>
-
-        <KeyFrame onClick={() => router.push("/dashboard/methods")}>
-          {" "}
-          <Image src="/TMicon.svg" height={30} width={30} alt="TMicon" /> &nbsp;
-          &nbsp;Trading Methods
-        </KeyFrame>
-
-        <KeyFrame onClick={() => router.push("/dashboard/amount")}>
-          {" "}
-          <Image
-            src="/Vector.svg"
-            height={30}
-            width={30}
-            alt="GetCashicon"
-          />{" "}
-          &nbsp; &nbsp;Amount
+          &nbsp; &nbsp;Strategies
         </KeyFrame>
 
         <KeyFrame onClick={() => router.push("/dashboard/projections")}>

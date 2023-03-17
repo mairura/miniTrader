@@ -1,13 +1,13 @@
-import Layout from "@/components/dashboard/Layout";
-import Projection from "@/components/dashboard/pages/projection";
+import { Layout } from "@/components/dashboard";
+import Projections from "@/components/dashboard/pages/projections";
 import React from "react";
 
-const Projections = () => {
+const Projection = () => {
   return (
     <Layout>
-      <Projection />
+      <Projections />
     </Layout>
   );
 };
 
-export default Projections;
+export default Projection;

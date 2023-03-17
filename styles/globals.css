@@ -106,3 +106,13 @@ a {
     width: 100%;
   }
 }
+/* Modal */
+.modal {
+  position: fixed;
+  width: 40vw;
+  height: 65vh;
+  left: 45em;
+  top: 17em;
+  background: #2c1853;
+  border-radius: 2.4em;
+}

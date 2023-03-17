@@ -9,18 +9,15 @@ import {
   MobileConnect,
   MobileContainer,
   MobileView,
-  MobImg,
   NavElements,
   NavMessage,
   SearchInput,
 } from "./Navbar.styles";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-import { useRouter } from "next/router";
 import Keymap from "./Keymap";
 
 const Navbar = () => {
-  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);

@@ -23,8 +23,10 @@ import {
   RiskWheel,
 } from "./qDial.styles";
 import ReactSpeedometer from "react-d3-speedometer";
+import { useRouter } from "next/router";
 
 export default function QDial() {
+  const router = useRouter();
   const [speed, setSpeed] = useState(1);
   const [count, setCount] = useState(1);
 
@@ -97,7 +99,11 @@ export default function QDial() {
                 </ReturnYearsContent>
               </ReturnYears>
               <ResBtn>
-                <ResNextPageButton>Next</ResNextPageButton>
+                <ResNextPageButton
+                  onClick={() => router.push("/dashboard/strategies")}
+                >
+                  Next
+                </ResNextPageButton>
               </ResBtn>
             </ProgressBoxLeft>
 
@@ -153,7 +159,11 @@ export default function QDial() {
               </RiskWheel>
               <RiskTitle> Risk Level</RiskTitle>
               <Next>
-                <NextPageButton>Next</NextPageButton>
+                <NextPageButton
+                  onClick={() => router.push("/dashboard/strategies")}
+                >
+                  Next
+                </NextPageButton>
               </Next>
             </RiskTab>
           </ProgressBox>
