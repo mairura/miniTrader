@@ -122,3 +122,67 @@ export const ModalCancel = styled(Button)`
   background: transparent;
   color: #fff;
 `;
+//------- Projections --------------
+export const ProjectContainer = styled.div`
+padding: 1em;
+display: flex;
+flex-direction: column;
+text-align: left;
+align-items: left;
+width: 100%;
+margin: 1em;
+
+`;
+export const ProjectsHeader = styled.h4`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #ECE8E8;
+`;
+export const ProjectContent = styled.div`
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+padding-top: 1em;
+`;
+export const ProjectGrid  =styled.div`
+width: 22vw;
+height: 23vh;
+background: #2C1853;
+border-radius: 2.4em;
+padding: 2em;
+`
+export const ProjectCash = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-weight: 500;
+font-size: 1rem;
+padding: 1.5em;
+`
+export const Amount  = styled.h6`
+font-size: 4rem;
+padding-bottom: .5em;
+`
+export const ProgressData = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+`
+export const RateText = styled.h3`
+width: 150px;
+text-align: left;
+margin-left: .5em;
+`
+export const ProjectionsHeader = styled.h3`
+font-size: 1.5rem;
+padding: 1em;
+`
+
+export const ProjectDetails  =styled.div`
+background: #2C1853;
+border-radius: 24px;
+padding: 1.5em 2em;
+margin-top: 1em;
+`
