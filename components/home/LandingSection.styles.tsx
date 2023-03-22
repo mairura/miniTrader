@@ -7,13 +7,15 @@ import styled from "styled-components";
 export const LandingHeader = styled(Header)`
   font-style: normal;
   font-weight: 800;
-  font-size: 72px;
   line-height: 150%;
   @media (max-width: 768px) {
     display: flex;
     font-size: 32px;
     text-align: center;
     justify-content: center;
+  }
+  @media (min-width: 769px) and (max-with: 1200px){
+    font-size: 30px;
   }
 `;
 export const LandingGrid = styled(Grid)`
