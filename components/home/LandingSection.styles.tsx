@@ -32,7 +32,7 @@ export const LandingParagraph = styled(Paragraph)`
   }
   @media (min-width: 769px){
     font-size: 2rem;
-    line-height: 70%;
+    line-height: 100%;
   }
 `;
 export const LandingLeft = styled.div`
