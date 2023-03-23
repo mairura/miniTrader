@@ -32,6 +32,7 @@ export const LandingParagraph = styled(Paragraph)`
   }
   @media (min-width: 769px){
     font-size: 2rem;
+    line-height: 70%;
   }
 `;
 export const LandingLeft = styled.div`
@@ -50,8 +51,7 @@ export const LandingLeft = styled.div`
   }
 `;
 export const LandingButton = styled(Button)`
-  
-  margin: 10px 0px;
+  margin: 8px 0px;
   @media (max-width: 768px) {
     width: 152px;
     height: 41px;
@@ -60,5 +60,6 @@ export const LandingButton = styled(Button)`
   @media (min-width: 769px){
     width: 338px;
     height: 74px;
+    margin: 0;
   }
 `;
