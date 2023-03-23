@@ -8,6 +8,6 @@ export const Header = styled.div`
   color: #faf8f8;
   @media (max-width: 768px) {
     display: flex;
-    font-size: 32px;
+    font-size: 32px;   
   }
 `;

@@ -20,16 +20,18 @@ export const LandingHeader = styled(Header)`
     justify-content: center;
   }
   @media (min-width: 769px){
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 `;
 export const LandingParagraph = styled(Paragraph)`
-  font-size: 36px;
   line-height: 150%;
   @media (max-width: 768px) {
     display: flex;
     font-size: 16px;
     text-align: center;
+  }
+  @media (min-width: 769px){
+    font-size: 2rem;
   }
 `;
 export const LandingLeft = styled.div`
