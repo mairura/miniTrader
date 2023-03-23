@@ -18,6 +18,9 @@ import HashLoader from "react-spinners/HashLoader";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 
+import toast from 'react-hot-toast';
+// import 'react-toastify/dist/ReactToastify.css';
+
 const override: CSSProperties = {
   display: "block",
   margin: "0 auto",
@@ -79,7 +82,7 @@ export default function SignupForm() {
     {
       onCompleted: (data: { createUser: { success: boolean } }) => {
         if (data.createUser.success == true) {
-          router.push("/auth/activate");
+          router.push("/guidelines");
         }
       },
     }
@@ -123,7 +126,7 @@ export default function SignupForm() {
     );
   }
   if (error) {
-    alert(error);
+    toast.error('Failed to signup user');
   }
   return (
     <AuthContainer>

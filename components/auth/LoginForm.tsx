@@ -17,6 +17,8 @@ import HashLoader from "react-spinners/HashLoader";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 
+import toast from "react-hot-toast";
+
 const override: CSSProperties = {
   display: "block",
   margin: "0 auto",
@@ -50,7 +52,8 @@ export default function LoginForm() {
         localStorage.setItem("user_token", data.findUser.data.jwt_token);
         router.push("/dashboard");
       } else {
-        alert(data.findUser.error);
+        // alert(data.findUser.error);
+        toast.error('Failed to signup user');
       }
       // Handle mutation result here
     },
@@ -89,7 +92,7 @@ export default function LoginForm() {
     );
   }
   if (error) {
-    alert(error);
+    toast.error('Failed to login user');
   }
   return (
     <LoginContainer>
