@@ -20,8 +20,7 @@ import {
   StrategiesHeader,
   StrategiesName,
 } from "./dashboard.styles";
-// reactstrap components
-import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
+import {  Modal, ModalBody, } from "reactstrap";
 import toast, { Toaster } from "react-hot-toast";
 import { BiDollar } from "react-icons/bi";
 
@@ -30,27 +29,18 @@ const Strategies = () => {
     toast("Confirm Success", {
       duration: 4000,
       position: "top-center",
-
-      // Styling
       style: {},
-
-      // Custom Icon
       icon: "👏",
-
-      // Change colors of success/error/loading icon
       iconTheme: {
         primary: "#000",
         secondary: "#fff",
       },
-
-      // Aria
       ariaProps: {
         role: "status",
         "aria-live": "polite",
       },
     });
   const [modalOpen, setModalOpen] = useState(false);
-  //Traders Data profiles
   const tradersData = [
     {
       profile: "/Person1.svg",

@@ -17,6 +17,10 @@ export const StrategiesContainer = styled.div`
   border-radius: 2.4em;
   margin: 4em;
   padding: 5em;
+  @media (max-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
 export const StrategiesHeader = styled.h3`
   font-style: normal;

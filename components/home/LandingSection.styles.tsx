@@ -31,7 +31,7 @@ export const LandingParagraph = styled(Paragraph)`
     text-align: center;
   }
   @media (min-width: 769px){
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 100%;
   }
 `;
