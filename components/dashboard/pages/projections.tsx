@@ -32,36 +32,36 @@ const Projections = () => {
     <ProjectContainer>
       <ProjectsHeader>Track your Progress</ProjectsHeader>
       <ProjectContent>
-      <ProjectGrid>
-        <ProgressData>
-          <ProgressChart>
-            <CircularProgressbar value={percentage} text={`${percentage}%`} 
-              styles={buildStyles({
-                rotation: 0.25,
-                strokeLinecap: 'butt',
-                textSize: '16px',
-                pathTransitionDuration: 0.5,
-                pathColor: '#FF31FA',
-                textColor: '#fff',
-              })}
-            />
-          </ProgressChart>
-          <RateText>
-            Your Conversion Rate
-          </RateText>
-        </ProgressData>
-      </ProjectGrid>
-      <ProjectGrid>
-        <ProjectCash>
-          <Amount>$23,414</Amount>
-          Your Earnings
-        </ProjectCash>
+        <ProjectGrid>
+          <ProgressData>
+            <ProgressChart>
+              <CircularProgressbar value={percentage} text={`${percentage}%`} 
+                styles={buildStyles({
+                  rotation: 0.25,
+                  strokeLinecap: 'butt',
+                  textSize: '16px',
+                  pathTransitionDuration: 0.5,
+                  pathColor: '#FF31FA',
+                  textColor: '#fff',
+                })}
+              />
+            </ProgressChart>
+            <RateText>
+              Your Conversion Rate
+            </RateText>
+          </ProgressData>
         </ProjectGrid>
-      <ProjectGrid>
-        <ProjectCash>
-        <Amount>ETH</Amount>
-        Your Top Stock
-        </ProjectCash>
+        <ProjectGrid>
+          <ProjectCash>
+            <Amount>$23,414</Amount>
+            Your Earnings
+          </ProjectCash>
+          </ProjectGrid>
+        <ProjectGrid>
+          <ProjectCash>
+          <Amount>ETH</Amount>
+          Your Top Stock
+          </ProjectCash>
         </ProjectGrid>
       </ProjectContent> 
       <ProjectDetails>

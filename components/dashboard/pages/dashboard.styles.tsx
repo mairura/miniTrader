@@ -199,7 +199,8 @@ background: #2C1853;
 border-radius: 2.4em;
 padding: 2em;
 @media (max-width: 768px){
-  border: 1px solid green;
+  display: flex;
+  justify-content: center;
   padding: 1em 0.4em;
   height: 150px;
   border-radius: 1em;
@@ -250,7 +251,7 @@ text-align: left;
 margin-left: .5em;
 @media (max-width: 768px){
   font-size: 12px;
-  width: 50px;
+  width: 100%;
   padding-top: .5em;
 }
 `
