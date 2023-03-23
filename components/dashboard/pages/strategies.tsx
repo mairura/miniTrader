@@ -103,7 +103,7 @@ const Strategies = () => {
                   isOpen={modalOpen}
                   className="modal"
                 >
-                  <ModalHeader className=" modal-header">
+                  <ModalHeader className="modal-header">
                     <ModalBtn
                       aria-label="Close"
                       className=" close"
