@@ -26,7 +26,7 @@ import { BiDollar } from "react-icons/bi";
 
 const Strategies = () => {
   const notify = () =>
-    toast("Confirm Success", {
+    toast("Confirmed Transaction", {
       duration: 4000,
       position: "top-center",
       style: {},

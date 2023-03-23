@@ -3,8 +3,24 @@ import React from "react";
 import { Amount, MainBg, ProgressChart, ProgressData, ProjectCash, ProjectContainer, ProjectContent, ProjectDetails, ProjectGrid, ProjectionsHeader, ProjectsHeader, RateText, StrategiesBtn, StrategiesContent, StrategiesData, StrategiesName } from "./dashboard.styles";
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import toast, { Toaster } from "react-hot-toast";
 
 const Projections = () => {
+  const cancel = () =>
+  toast("Cancelled Follow Request", {
+    duration: 4000,
+    position: "top-center",
+    style: {},
+    icon: "❗",
+    iconTheme: {
+      primary: "#000",
+      secondary: "#fff",
+    },
+    ariaProps: {
+      role: "status",
+      "aria-live": "polite",
+    },
+  });
   const percentage = 74;
 
   const tradersData = [
@@ -86,9 +102,10 @@ const Projections = () => {
               &nbsp;&nbsp;
               <StrategiesName>{item.percentage}</StrategiesName>
             </StrategiesData>
-            <StrategiesBtn>
+            <StrategiesBtn onClick={cancel}>
               Cancel
             </StrategiesBtn>
+            <Toaster />
         </StrategiesContent>
           );
         })}

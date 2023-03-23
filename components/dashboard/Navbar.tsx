@@ -16,6 +16,7 @@ import {
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Keymap from "./Keymap";
+import toast, { Toaster } from "react-hot-toast";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,21 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+  const connect = () =>
+  toast("Connecting...", {
+    duration: 4000,
+    position: "top-center",
+    style: {},
+    icon: "💲",
+    iconTheme: {
+      primary: "#000",
+      secondary: "#fff",
+    },
+    ariaProps: {
+      role: "status",
+      "aria-live": "polite",
+    },
+  });
   return (
     <DashboardSection>
       {/*------------Mobile View--------*/}
@@ -82,7 +98,8 @@ const Navbar = () => {
         <HambugerMenu>
           <Image src="/Logo.png" height={33} width={79} alt="mainlogo" />
         </HambugerMenu>
-        <ConnectButton>Connect</ConnectButton>
+        <ConnectButton onClick={connect}>Connect</ConnectButton>
+        <Toaster />
       </NavElements>
     </DashboardSection>
   );

@@ -198,6 +198,7 @@ height: 20vh;
 background: #2C1853;
 border-radius: 2.4em;
 padding: 2em;
+color: #ECE8E8;
 @media (max-width: 768px){
   display: flex;
   justify-content: center;
@@ -249,6 +250,7 @@ export const RateText = styled.h3`
 width: 150px;
 text-align: left;
 margin-left: .5em;
+color: #ECE8E8;
 @media (max-width: 768px){
   font-size: 12px;
   width: 100%;
