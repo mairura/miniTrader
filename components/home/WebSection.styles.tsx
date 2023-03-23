@@ -5,7 +5,7 @@ padding: 0px 0px 100px 0px;
 `;
 
 export const WebGrid = styled(NavbarBody)`
-  padding: 100px;
+  padding: 4em;
   @media (max-width: 768px) {
     padding: 40px 20px;
     display: flex;
@@ -30,4 +30,5 @@ export const WebGridItemText = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
+  color: #FAF8F8;
 `;

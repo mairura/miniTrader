@@ -60,7 +60,7 @@ export default function GettingStartedSection() {
             <Image
               priority
               src="/Levels.svg"
-              height={732}
+              height={632}
               width={837}
               alt="levels icon"
             />

@@ -29,39 +29,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   }, []);
 
   return (
-    <>
-      {loading ? (
-        <>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100vw",
-              height: "100vh",
-              backgroundColor: " #19123b",
-            }}
-          >
-            <HashLoader
-              color="#7933ff"
-              cssOverride={override}
-              size={100}
-              aria-label="Loading Spinner"
-              data-testid="loader"
-            />
-          </div>
-        </>
-      ) : (
-        <>
-          <Container>
-            <SideBar />
-            <div>
-              <Navbar />
-              {children}
-            </div>
-          </Container>
-        </>
-      )}
+    <>  
+      <Container>
+        <SideBar />
+        <div>
+          <Navbar />
+          {children}
+        </div>
+      </Container>
     </>
   );
 };

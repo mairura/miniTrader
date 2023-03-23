@@ -1,5 +1,4 @@
 import { Container } from "./common/Container";
-
 import {
   FooterGrid,
   FooterHeader,
@@ -47,7 +46,7 @@ export default function Footer() {
         </FooterWrapper>
 
         <FooterWrapper>
-          <FooterHeader>FollowUs</FooterHeader>
+          <FooterHeader>Follow Us</FooterHeader>
           <FooterIcons>
             <Image
               priority

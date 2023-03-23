@@ -20,7 +20,7 @@ export default function WebSection() {
           <Image
             priority
             src="/Stocks.svg"
-            height={532}
+            height={530}
             width={737}
             alt="Stocks icon"
           />
@@ -56,8 +56,8 @@ export default function WebSection() {
           Grow your wealth , even if it is as low as USD 1 dollar
           <br /> Expert team of 18 research analysts full-time selecting the
           best opportunities. You decide your risk threshold and filter
-          money-growing assets that fit your style. Kinda
-          <br /> like, set-it and forget-it.
+          money-growing assets that fit your style. <br /> 
+          Kinda like, set-it and forget-it.
           <br /> Grow your wealth while you sleep with alerts that keep you
           ahead and on top of your money
           <br />

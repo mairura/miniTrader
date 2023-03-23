@@ -50,11 +50,14 @@ export const FooterIcons = styled(Grid)`
   grid-template-columns: repeat(3, 50px);
   grid-gap: 20px;
   padding: 20px 0px;
+  /* background: red; */
   @media (max-width: 768px) {
     display: flex;
     flex-direction: row;
     img {
         width: 30px;
+        background-color: transparent;
+        border-radius: 50%;
     }
   }
 `;
