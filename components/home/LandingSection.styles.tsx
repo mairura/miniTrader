@@ -45,14 +45,20 @@ export const LandingLeft = styled.div`
     padding-top: 200px;
     justify-content: center;
   }
+  @media (min-width: 769px){
+    padding: 16px 0;
+  }
 `;
 export const LandingButton = styled(Button)`
-  width: 338px;
-  height: 84px;
-  margin: 20px 0px;
+  
+  margin: 10px 0px;
   @media (max-width: 768px) {
     width: 152px;
     height: 41px;
     font-size: 14px;
+  }
+  @media (min-width: 769px){
+    width: 338px;
+    height: 74px;
   }
 `;
