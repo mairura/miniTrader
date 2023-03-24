@@ -53,7 +53,7 @@ export default function LoginForm() {
         router.push("/dashboard");
       } else {
         // alert(data.findUser.error);
-        toast.error('Failed to signup user');
+        toast.error(`User not found!`);
       }
       // Handle mutation result here
     },

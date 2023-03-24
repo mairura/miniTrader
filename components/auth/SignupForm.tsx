@@ -17,9 +17,7 @@ import { useState, CSSProperties } from "react";
 import HashLoader from "react-spinners/HashLoader";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
-
 import toast from 'react-hot-toast';
-// import 'react-toastify/dist/ReactToastify.css';
 
 const override: CSSProperties = {
   display: "block",
