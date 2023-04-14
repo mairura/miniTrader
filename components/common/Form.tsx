@@ -1,13 +1,9 @@
-import styled from "styled-components";
-import BgImage from "../../public/icons/BgPro.svg";
+import styled from 'styled-components';
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 40px 0px;
   @media (max-width: 768px) {
-    // height: 90vh;
-    // padding: 30px;
     width: 100%;
   }
   @media (min-width: 768px) {

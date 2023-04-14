@@ -1,11 +1,11 @@
-import { GetStartedBody, StartedImage } from "./GetStartedSection.styles";
-import Image from "next/image";
-import { Grid } from "@/components/common/Grid";
-import { Photos } from "@/components/common/Image";
-import { RightGrid } from "@/components/common/RightGrid";
-import { Header } from "@/components/common/Header";
-import { Paragraph } from "@/components/common/Paragraph";
-import { Container } from "../common/Container";
+import { GetStartedBody, StartedImage } from './GetStartedSection.styles';
+import Image from 'next/image';
+import { Grid } from '@/components/common/Grid';
+import { Photos } from '@/components/common/Image';
+import { RightGrid } from '@/components/common/RightGrid';
+import { Header } from '@/components/common/Header';
+import { Paragraph } from '@/components/common/Paragraph';
+import { Container } from '../common/Container';
 
 export default function SelectingPage() {
   return (

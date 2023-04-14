@@ -1,6 +1,6 @@
-import React from "react";
-import LeftChevron from "../common/LeftChevron";
-import { AuthTitle, InfoTitle, SuccessContainer } from "./Auth.styles";
+import React from 'react';
+import LeftChevron from '../common/LeftChevron';
+import { AuthTitle, InfoTitle, SuccessContainer } from './Auth.styles';
 
 const ResetPassSuccess = () => {
   return (

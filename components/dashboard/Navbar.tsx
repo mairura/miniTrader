@@ -1,8 +1,7 @@
-import Image from "next/image";
-import React, { useState } from "react";
+import Image from 'next/image';
+import React, { useContext, useEffect, useState } from 'react';
 import {
-  ConnectButton,
-  ConnectTab,
+  UserProfile,
   DashboardSection,
   HambugerMenu,
   MobiButton,
@@ -12,36 +11,54 @@ import {
   NavElements,
   NavMessage,
   SearchInput,
-} from "./Navbar.styles";
-import Drawer from "react-modern-drawer";
-import "react-modern-drawer/dist/index.css";
-import Keymap from "./Keymap";
-import toast, { Toaster } from "react-hot-toast";
+} from './Navbar.styles';
+import Drawer from 'react-modern-drawer';
+import 'react-modern-drawer/dist/index.css';
+import Keymap from './Keymap';
+import toast from 'react-hot-toast';
+import { AuthContext } from '@/context';
+import { formatAddress } from '@/helpers';
+import CopyToClipboard from 'react-copy-to-clipboard';
+import { AiOutlineCopy } from 'react-icons/ai';
+import { SlLogout } from 'react-icons/sl';
+import { JsonRpcProvider, formatEther } from 'ethers';
+import { config } from '@/config';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const router = useRouter();
+
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
 
+  const [balance, setBalance] = useState(0);
+
+  const { user, logout } = useContext(AuthContext);
+
   const closeMenu = () => {
     setIsOpen(false);
   };
-  const connect = () =>
-  toast("Connecting...", {
-    duration: 4000,
-    position: "top-center",
-    style: {},
-    icon: "💲",
-    iconTheme: {
-      primary: "#000",
-      secondary: "#fff",
-    },
-    ariaProps: {
-      role: "status",
-      "aria-live": "polite",
-    },
-  });
+
+  useEffect(() => {
+    const getBalance = async (account: string) => {
+      // get balance with ethers for bsc testnet
+      let provider = new JsonRpcProvider(config.BSC_TESTNET_RPC);
+
+      return provider.getBalance(account);
+    };
+    if (user?.wallet) {
+      let account = user.wallet.accounts[0].address;
+
+      getBalance(account)
+        .then((balance) =>
+          setBalance(parseFloat(parseFloat(formatEther(balance)).toFixed(4))),
+        )
+        .catch((err) => console.log(err));
+    }
+  }, [user]);
+
   return (
     <DashboardSection>
       {/*------------Mobile View--------*/}
@@ -64,7 +81,7 @@ const Navbar = () => {
           </MobileContainer>
           <Keymap />
           <MobiButton>
-            <MobileConnect>Connect</MobileConnect>
+            {/* <MobileConnect>Connect</MobileConnect> */}
           </MobiButton>
         </MobileView>
       </Drawer>
@@ -80,26 +97,74 @@ const Navbar = () => {
           />
         </HambugerMenu>
         <NavMessage>
-          Hello
+          <span>Hello {user?.username ?? 'Guest'}, &nbsp; </span>
           <h1>Welcome!</h1>
         </NavMessage>
-        <SearchInput type="search" placeholder="Minitrade" />{" "}
-        <ConnectTab>
-          Connect Wallet &nbsp;
-          <Image src="/Wallet.svg" height={36} width={36} alt="wallet icon" />
-          &nbsp; &nbsp; &nbsp;
-          <Image
+        <SearchInput type="search" placeholder="Minitrader" />{' '}
+        <UserProfile>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexDirection: 'column',
+            }}
+          >
+            <div
+              style={{
+                cursor: 'pointer',
+              }}
+            >
+              <CopyToClipboard
+                text={user?.wallet.accounts[0].address || '__'}
+                onCopy={() => toast.success('Address copied')}
+              >
+                <span
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <span>
+                    {formatAddress(user?.wallet.accounts[0].address || '__')}
+                  </span>
+                  <AiOutlineCopy
+                    style={{
+                      marginLeft: '0.5rem',
+                    }}
+                  />
+                </span>
+              </CopyToClipboard>
+            </div>
+            <div>{balance} BNB</div>
+          </div>
+          <SlLogout
+            style={{
+              cursor: 'pointer',
+            }}
+            onClick={() => {
+              logout();
+
+              toast.success('Logged out');
+              router.push('/account/login');
+            }}
+          />
+          {/* <Image
             src="/EllipsisLine.svg"
             height={30}
             width={35}
             alt="ellipsis"
-          />
-        </ConnectTab>
+            style={{
+              cursor: "pointer",
+            }}
+            onClick={() => toast.success("Coming soon")}
+          /> */}
+        </UserProfile>
         <HambugerMenu>
-          <Image src="/Logo.png" height={33} width={79} alt="mainlogo" />
+          <Image src="/Logo.svg" height={100} width={100} alt="mainlogo" />
         </HambugerMenu>
-        <ConnectButton onClick={connect}>Connect</ConnectButton>
-        <Toaster />
+        {/* <ConnectButton onClick={connect}>Connect</ConnectButton> */}
       </NavElements>
     </DashboardSection>
   );

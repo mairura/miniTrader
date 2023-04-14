@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const DashboardElements = styled.div`
   flex-direction: row;
   height: 100vh;
-  width: 100%;
+  width: 15vw;
   position: relative;
   @media (max-width: 768px) {
     display: none;
@@ -27,6 +27,7 @@ export const TopBar = styled.div`
 
 export const BackArrow = styled.div`
   margin-left: 10px;
+  cursor: pointer;
 `;
 
 export const NavLogo = styled.div`
@@ -49,7 +50,7 @@ export const MiniImg = styled.div`
 
 export const KeymapItems = styled.div`
   display: flex;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   flex-direction: column;
   color: #fff;
   justify-items: center;
@@ -63,30 +64,44 @@ export const KeymapItems = styled.div`
 `;
 
 export const KeyFrame = styled.div`
-padding-left: 11px;
-width: 100%
-color: #fff;
-height: 50px;
-font-weight: 400;
-font-size: 20px;
-justify-content: start;
-align-items: center;
-display: flex;
-margin: 5px 0;
-&:hover {
-  background: rgba(196, 196, 196, 0.33);
-  cursor: pointer;
-  width: 90%;
-  border-radius: 5px;
-  margin-left: 15px;
-}
-@media (max-width: 768px){
-  font-size: 14px;
+  padding-left: 11px;
+  width: 100%;
+  color: #fff;
+  height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  margin: 5px 0;
   &:hover {
     background: rgba(196, 196, 196, 0.33);
     cursor: pointer;
-    margin:0;
-    width: 100%;
+    width: 90%;
+    border-radius: 5px;
+    padding: 5px;
   }
-}
+  @media (max-width: 768px) {
+    font-size: 14px;
+    &:hover {
+      background: rgba(196, 196, 196, 0.33);
+      cursor: pointer;
+      margin-left: 10px;
+      width: 90%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 990px) {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 13px;
+    padding-left: 5px;
+    margin: 10px 0;
+  }
+  @media (min-width: 991px) and (max-width: 1200px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1201px) {
+    font-size: 16px;
+  }
 `;

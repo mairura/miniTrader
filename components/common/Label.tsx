@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Label = styled.label`
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   @media (max-width: 320px) {
     font-size: 10px;

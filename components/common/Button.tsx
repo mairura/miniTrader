@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Button = styled.button`
   display: flex;
@@ -22,7 +22,7 @@ export const Button = styled.button`
     padding: 10px 20px;
     font-size: 16px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     width: 100%;
     padding: 0;
     margin: 0;

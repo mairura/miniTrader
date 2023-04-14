@@ -1,0 +1,9 @@
+export enum RiskLevel {
+  VERY_LOW = 'VERY_LOW',
+  LOW = 'LOW',
+  MODERATE_LOW = 'MODERATE_LOW',
+  MODERATE = 'MODERATE',
+  MODERATE_HIGH = 'MODERATE_HIGH',
+  HIGH = 'HIGH',
+  VERY_HIGH = 'VERY_HIGH',
+}

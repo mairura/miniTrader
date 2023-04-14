@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { Grid } from "./common/Grid";
-import { Header } from "./common/Header";
-import { Paragraph } from "./common/Paragraph";
-import { StartedImage } from "./home/GetStartedSection.styles";
+import styled from 'styled-components';
+import { Grid } from './common/Grid';
+import { Header } from './common/Header';
+import { Paragraph } from './common/Paragraph';
+import { StartedImage } from './home/GetStartedSection.styles';
 
 export const FooterGrid = styled.div`
   display: flex;
@@ -37,6 +37,7 @@ export const FooterParagraph = styled(Paragraph)`
   text-align: start;
   font-size: 16px;
   line-height: 19px;
+  cursor: pointer;
 `;
 
 export const FooterHeader = styled(Header)`
@@ -47,17 +48,15 @@ export const FooterHeader = styled(Header)`
 `;
 
 export const FooterIcons = styled(Grid)`
-  grid-template-columns: repeat(3, 50px);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 20px 0px;
-  /* background: red; */
   @media (max-width: 768px) {
     display: flex;
     flex-direction: row;
     img {
-        width: 30px;
-        background-color: transparent;
-        border-radius: 50%;
+      background-color: transparent;
+      border-radius: 50%;
     }
   }
 `;

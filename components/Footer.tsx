@@ -1,4 +1,4 @@
-import { Container } from "./common/Container";
+import { Container } from './common/Container';
 import {
   FooterGrid,
   FooterHeader,
@@ -6,8 +6,8 @@ import {
   FooterImage,
   FooterParagraph,
   FooterWrapper,
-} from "./Footer.styles";
-import Image from "next/image";
+} from './Footer.styles';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -15,13 +15,7 @@ export default function Footer() {
       <FooterGrid>
         <FooterWrapper>
           <FooterImage>
-            <Image
-              priority
-              src="Logo.svg"
-              height={80}
-              width={198}
-              alt="logo"
-            />
+            <Image priority src="Logo.svg" height={80} width={198} alt="logo" />
           </FooterImage>
           <FooterParagraph>
             Copyright @{new Date().getFullYear()} All Rights Reserved.
@@ -54,6 +48,7 @@ export default function Footer() {
               height={58}
               width={58}
               alt="twitter icon"
+              className="social-icon"
             />
 
             <Image
@@ -62,6 +57,7 @@ export default function Footer() {
               height={58}
               width={58}
               alt="linkedin icon"
+              className="social-icon"
             />
 
             <Image
@@ -70,6 +66,7 @@ export default function Footer() {
               height={58}
               width={58}
               alt="telegram icon"
+              className="social-icon"
             />
           </FooterIcons>
         </FooterWrapper>

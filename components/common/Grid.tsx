@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 interface FlexContainerProps {
   mobileDirection?: string;
 }
-export const Grid= styled.div<FlexContainerProps>`
+export const Grid = styled.div<FlexContainerProps>`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { NavbarBody } from "../NavBar.styles";
+import styled from 'styled-components';
+import { NavbarBody } from '../NavBar.styles';
 export const WebBody = styled.div`
-padding: 0px 0px 100px 0px;
+  padding: 0px 0px 100px 0px;
 `;
 
 export const WebGrid = styled(NavbarBody)`
@@ -30,5 +30,5 @@ export const WebGridItemText = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #FAF8F8;
+  color: #faf8f8;
 `;

@@ -1,15 +1,10 @@
-import React from "react";
-import Navbar from "./Navbar";
-import SideBar from "./SideBar";
-import styled from "styled-components";
-import HashLoader from "react-spinners/HashLoader";
-import { useState, useEffect, CSSProperties } from "react";
-
-const override: CSSProperties = {
-  display: "block",
-  margin: "0 auto",
-  borderColor: "gray",
-};
+import React, { ReactNode, useContext, useEffect } from 'react';
+import Navbar from './Navbar';
+import SideBar from './SideBar';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
+import { AuthContext } from '@/context';
+import NoSSR from 'react-no-ssr';
 
 const Container = styled.div`
   display: grid;
@@ -21,23 +16,28 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
-  const [loading, setLoading] = useState(true);
+const Layout = ({ children }: { children: ReactNode }) => {
+  const router = useRouter();
+  const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 5000);
-  }, []);
+    if (!user) {
+      router.push('/account/login');
+    }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
 
   return (
-    <>  
-      <Container>
-        <SideBar />
-        <div>
-          <Navbar />
-          {children}
-        </div>
-      </Container>
-    </>
+    <Container>
+        <NoSSR>
+          <SideBar />
+          <div>
+            <Navbar />
+            {children}
+          </div>
+        </NoSSR>
+    </Container>
   );
 };
 

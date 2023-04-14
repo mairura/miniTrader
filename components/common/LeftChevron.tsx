@@ -1,8 +1,8 @@
-import Image from "next/image";
-import React from "react";
-import { BackTitle } from "../auth/Auth.styles";
-import styled from "styled-components";
-import Link from "next/link";
+import Image from 'next/image';
+import React from 'react';
+import { BackTitle } from '../auth/Auth.styles';
+import styled from 'styled-components';
+import Link from 'next/link';
 
 const BackToLogin = styled.div`
   display: flex;
@@ -17,12 +17,13 @@ const BackChevron = styled.button`
   align-items: center;
   color: #fff;
   margin-top: 20px;
+  cursor: pointer;
 `;
 
 const LeftChevron = () => {
   return (
     <BackToLogin>
-      <Link href="/login/">
+      <Link href="/account/login">
         <BackChevron>
           <Image
             src="/LeftChevron.svg"

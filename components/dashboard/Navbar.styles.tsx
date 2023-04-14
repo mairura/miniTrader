@@ -1,10 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const DashboardSection = styled.div`
   position: relative;
-  width: 100%;
+  width: 85vw;
   background: rgba(46, 29, 80, 0.44);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const HambugerMenu = styled.div`
@@ -25,9 +28,11 @@ export const NavElements = styled.div`
   background: #211446;
   @media (max-width: 768px) {
     display: flex;
-    width: 400px;
     height: 15vh;
     justify-content: space-around;
+  }
+  @media (min-width: 768px) {
+    padding: 0 20px;
   }
 `;
 
@@ -57,15 +62,21 @@ export const SearchInput = styled.input`
   @media (max-width: 768px) {
     display: none;
   }
+  @media (min-width: 768px) and (max-width: 990px) {
+    width: 200px;
+  }
+  @media (min-width: 991px) and (max-width: 1200px) {
+    width: 300px;
+  }
 `;
 
-export const ConnectTab = styled.div`
+export const UserProfile = styled.div`
   display: flex;
   color: #fff;
   font-weight: 400;
   font-size: 24px;
-  line-height: 153.52%;
   align-items: center;
+  gap: 1em;
   @media (max-width: 768px) {
     font-size: 9px;
     display: none;
@@ -97,8 +108,8 @@ export const MobileConnect = styled(ConnectButton)`
   justify-content: center;
   align-items: center;
 `;
-export const NavIcon = styled(ConnectTab)`
-  justify-item: center;
+export const NavIcon = styled(UserProfile)`
+  justify-content: center;
 `;
 
 //----------------Mobile View------------

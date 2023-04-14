@@ -1,21 +1,21 @@
-import { Grid } from "@/components/common/Grid";
+import { Grid } from '@/components/common/Grid';
 import {
   GetStartedBody,
   StartedHeader,
   StartedImage,
-} from "./GetStartedSection.styles";
-import { RightGrid } from "@/components/common/RightGrid";
-import { Header } from "@/components/common/Header";
-import { Paragraph } from "@/components/common/Paragraph";
-import { Photos } from "@/components/common/Image";
-import { Container } from "../common/Container";
-import Image from "next/image";
+} from './GetStartedSection.styles';
+import { RightGrid } from '@/components/common/RightGrid';
+import { Header } from '@/components/common/Header';
+import { Paragraph } from '@/components/common/Paragraph';
+import { Photos } from '@/components/common/Image';
+import { Container } from '../common/Container';
+import Image from 'next/image';
 
 export default function GettingStartedSection() {
   return (
     <GetStartedBody className="started-bg">
       <Container>
-        <StartedHeader>How to Use MiniTrade</StartedHeader>
+        <StartedHeader>How to Use Minitrader</StartedHeader>
         <Grid>
           <StartedImage>
             <Photos>

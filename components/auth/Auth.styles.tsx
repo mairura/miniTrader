@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Button } from "../common/Button";
+import styled from 'styled-components';
+import { Button } from '../common/Button';
 
 export const AuthWrapper = styled.div`
   position: relative;
@@ -17,12 +17,15 @@ export const AuthContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: url(/Form.svg);
-  padding: 2% 5%;
+  padding: 2% 5% 5% 5%;
   color: #fff;
   background-size: cover;
   background-position: center;
   border-radius: 12px;
   height: 100%;
+  min-width: 300px;
+  max-width: 600px;
+  width: 500px;
   @media (max-width: 320px) {
     max-height: 70%;
   }
@@ -42,6 +45,7 @@ export const AuthTitle = styled.div`
   font-size: 32px;
   line-height: 40px;
   padding-top: 5%;
+  margin: 20px 0;
   display: flex;
   align-items: center;
   @media (max-width: 320px) {
@@ -69,7 +73,7 @@ export const Italics = styled.i`
 `;
 export const AuthButton = styled(Button)`
   height: 5vh;
-  margin: 20px 0px;
+  margin: 40px 0px;
   color: #fff;
   @media (max-width: 400px) {
     padding: 0;
@@ -79,30 +83,27 @@ export const AuthButton = styled(Button)`
     height: 50px;
   }
 `;
-export const CheckData = styled.div`
-  display: flex;
-  justify-content: start;
-  margin-top: 3%;
-`;
-export const CheckInput = styled.input.attrs({ type: "checkbox" })`
-  displa: flex;
-  justify-content: start;
-  margin-right: 5px;
-  background: transparent;
-`;
-//---------Login Page Styles----------
+//-----------Login Page Styles------------
 export const LoginContainer = styled(AuthContainer)`
   background: url(/bgproLogin.svg);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  height: 50%;
+  /* height: 50%; */
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: 70vh;
+    padding-bottom: 30px;
   }
+`;
+export const LogInputSpace = styled.div`
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export const LabelTitle = styled.p`
   color: #8d8bbb;
@@ -112,10 +113,9 @@ export const LabelTitle = styled.p`
   }
 `;
 export const SignUp = styled.p`
-  transition: all 2s ease-out;
+  font-size: 1rem;
   &:hover {
     color: #7933ff;
-    font-size: 15px;
   }
 `;
 export const LoginReset = styled.div`
@@ -129,13 +129,11 @@ export const LoginReset = styled.div`
   }
 `;
 export const ForgotPass = styled.p`
-  transition: all 2s ease-out;
   padding-left: 9px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 16px;
   &:hover {
     color: #7933ff;
-    font-size: 14px;
   }
   @media (min-width: 768px) {
     padding: 5px;
@@ -147,11 +145,8 @@ export const PassContainer = styled(AuthContainer)`
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-  height: 40vh;
   @media (max-width: 768px) {
     width: 90vw;
-    height: 60vh;
-    padding-top: 100px;
   }
 `;
 export const PassData = styled.div`
@@ -160,6 +155,7 @@ export const PassData = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding-bottom: 1em;
 `;
 export const PassTitle = styled(LoginReset)`
   padding: 1px;
@@ -177,22 +173,27 @@ export const InfoContainer = styled(AuthContainer)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh;
-  width: 25vw;
+  height: auto;
+  width: 80vw;
+  max-width: 500px;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 70vh;
+  }
 `;
 export const InfoTitle = styled(LabelTitle)`
-  margin: 0;
-  padding: 5px 50px;
+  margin: 20px auto;
   text-align: center;
   margin-bottom: 50px;
-  width: 25vw;
+  width: 90%;
 `;
 ///-------------Reset Your Password Page------
 export const ResetYouPass = styled(AuthContainer)`
   background-image: url(/bgproRYP.svg);
   background-size: cover;
   background-position: center;
-  height: 50vh;
 `;
 export const ResetTitle = styled(AuthTitle)`
   margin-top: 80px;
@@ -202,5 +203,4 @@ export const SuccessContainer = styled(AuthContainer)`
   background-image: url(/bgpro5.svg);
   justify-content: center;
   align-items: center;
-  height: 30vh;
 `;

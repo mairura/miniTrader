@@ -1,6 +1,6 @@
-import { NavBar } from "@/components";
-import Head from "next/head";
-import Footer from "./Footer";
+import { NavBar } from '@/components';
+import Head from 'next/head';
+import Footer from './Footer';
 
 export default function Layout(props: { children: React.ReactNode }) {
   return (

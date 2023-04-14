@@ -1,6 +1,6 @@
-import { Photos } from "@/components/common/Image";
-import styled from "styled-components";
-import { Header } from "../common/Header";
+import { Photos } from '@/components/common/Image';
+import styled from 'styled-components';
+import { Header } from '../common/Header';
 
 export const GetStartedBody = styled.div`
   padding: 50px 100px;

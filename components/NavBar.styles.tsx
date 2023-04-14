@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Grid } from "./common/Grid";
+import styled from 'styled-components';
+import { Grid } from './common/Grid';
 
 export const NavbarElement = styled.div`
   position: absolute;
@@ -32,8 +32,8 @@ export const NavbarGrid = styled.div`
   }
 `;
 export const NavbarIcon = styled.div`
-padding: 10px 50px;
-@media (max-width: 768px) {
+  padding: 10px 50px;
+  @media (max-width: 768px) {
     padding: 20px;
     img {
       width: 80%;

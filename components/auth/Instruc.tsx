@@ -1,6 +1,6 @@
-import React from "react";
-import LeftChevron from "../common/LeftChevron";
-import { AuthTitle, InfoContainer, InfoTitle } from "./Auth.styles";
+import React from 'react';
+import LeftChevron from '../common/LeftChevron';
+import { AuthTitle, InfoContainer, InfoTitle } from './Auth.styles';
 
 const Info = () => {
   return (

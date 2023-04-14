@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { useRouter } from "next/router";
-import React from "react";
-import Keymap from "./Keymap";
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+import React from 'react';
+import Keymap from './Keymap';
 import {
   BackArrow,
   DashboardElements,
@@ -9,7 +9,7 @@ import {
   MiniImg,
   NavLogo,
   TopBar,
-} from "./SideBar.styles";
+} from './SideBar.styles';
 
 const SideBar = () => {
   const router = useRouter();
@@ -17,7 +17,7 @@ const SideBar = () => {
     <DashboardElements>
       <ElementKeymap>
         <TopBar>
-          <BackArrow>
+          <BackArrow onClick={() => router.push('/')}>
             <Image
               src="/LeftArrow.svg"
               height={22}

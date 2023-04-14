@@ -1,5 +1,5 @@
-import AuthLayout from "@/components/auth/AuthLayout";
-import ResetPassSuccess from "@/components/auth/ResetPassSuccess";
+import AuthLayout from '@/components/auth/AuthLayout';
+import ResetPassSuccess from '@/components/auth/ResetPassSuccess';
 
 export default function ResetRequestSuccess() {
   return (
